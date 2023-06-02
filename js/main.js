@@ -153,21 +153,14 @@ audio.addEventListener('timeupdate', savePlaybackProgress);
 window.addEventListener('load', restorePlaybackProgress);
 
 ////////Slider/////////
-
-const slider = document.querySelector('.slider');
-const prevArrow = document.querySelector('.main__AllTracks-slider-arrow-left');
-const nextArrow = document.querySelector('.main__AllTracks-slider-arrow-right');
-
-// Функция для перемещения активного слайда в конец
-function moveActiveSlideToEnd() {
-  const activeSlide = slider.querySelector('.slide');
-  const nextSlide = activeSlide.nextElementSibling;
-  
-  if (nextSlide) {
-    slider.appendChild(activeSlide);
-  }
-}
-
-// Обработчик события для кнопки "Следующий слайд"
-nextArrow.addEventListener('click', moveActiveSlideToEnd);
-
+    var swiper = new Swiper('.swiper', {
+        // Настройки Swiper
+        slidesPerView: 4,
+        spaceBetween: 20,
+        navigation: {
+            nextEl: '.main__AllTracks-slider-arrow-right',
+            prevEl: '.main__AllTracks-slider-arrow-left'
+        },
+        mousewheel: false,
+        loop: false
+    });

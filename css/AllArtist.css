@@ -1,0 +1,27 @@
+.AllArtist {
+    margin-top: 85px;
+}
+
+.AllArtist__wrapper {
+    margin-top: 40px;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+
+}
+
+.artist {
+    border-radius: 500px;
+    position: relative;
+    cursor: pointer;
+}
+
+.artist-name {
+    top: 112px;
+    left: 60px;
+    position: absolute;
+    font-family: 'Nunito';
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 38px;
+    color: var(--white)
+}

@@ -152,7 +152,6 @@ audio {
 }
 
 
-
 .main__AllTracks {
     margin-top: 85px;
 }
@@ -195,6 +194,38 @@ audio {
 }
 
 .slide {}
+
+.swiper-slide {
+    width: 280px !important;
+    height: 280px !important;
+}
+
+.swiper-slide-active {
+    width: 545px !important;
+    height: 545px !important;
+    transition: height .5s, width .3s;
+}
+
+.track {
+    max-width: 100%;
+    width: 100%;
+}
+
+.track img {
+    border-radius: 10px;
+    display: block;
+    object-fit: cover;
+    object-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+}
+
+.track__btn img {
+    height: 70px;
+    width: 70px;
+    background-size: cover;
+}
 
 .MainSlide {
     position: relative;
