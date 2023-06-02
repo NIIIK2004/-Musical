@@ -1,0 +1,266 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+a {
+    color: #272727;
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+:root {
+    --feolet: #5347CC;
+    --white: #F8F8F8;
+    --black: #0B0B0B;
+    --gray: #CDCDCD;
+}
+
+body {
+    background: var(--black);
+    font-family: 'Nunito', sans-serif;
+    font-weight: 300;
+    line-height: 140%;
+    color: var(--white);
+}
+
+button {
+    background: none;
+    outline: none;
+    border: transparent;
+    cursor: pointer;
+}
+
+.title {}
+
+.text {}
+
+.container {
+    max-width: 1785px;
+    padding: 0 20px;
+    margin: 0 auto;
+}
+
+.bottom_panel {
+    background-color: #1B1B1B;
+    padding: 20px 0;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
+
+.audio-container {
+    display: flex;
+    align-items: center;
+    position: relative;
+    gap: 40px;
+
+}
+
+audio {
+    display: none;
+}
+
+.progress-bar {
+    background-color: var(--white);
+    height: 4px;
+    width: 420px;
+    border-radius: 50px;
+    position: relative;
+}
+
+.progress {
+    background-color: var(--feolet);
+    height: 100%;
+    transition: width 0.2s ease;
+    border-radius: 50px;
+}
+
+
+.circle {
+    content: "";
+    background: url(../images/logo-progress-var-line.svg);
+    background-repeat: no-repeat;
+    position: absolute;
+    top: -5px;
+    left: 0;
+    width: 10px;
+    height: 15px;
+    opacity: 0;
+    transition: opacity 0.2s ease;
+}
+
+.progress-bar:hover .circle {
+    opacity: 1;
+}
+
+.audio__info-wrapper {
+    display: flex;
+    gap: 6px;
+}
+
+.audio-action_btn {
+    display: flex;
+    gap: 30px;
+    justify-content: flex-end;
+}
+
+.controls {
+    display: flex;
+    gap: 15px;
+}
+
+.audio-left-block,
+.audio-action_btn {
+    flex: 1;
+}
+
+.audio-left-block {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.audio__info-wrapper img {
+    border-radius: 9px;
+}
+
+.time {
+    display: flex;
+    gap: 336px;
+    margin-top: 4px;
+}
+
+.track__info h3 {
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 140%;
+    color: var(--gray);
+
+}
+
+.track__info p {
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 140%;
+    color: var(--white);
+}
+
+
+
+.main__AllTracks {
+    margin-top: 85px;
+}
+
+.title {
+    font-family: 'Nunito';
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 65px;
+    color: var(--white);
+}
+
+.main__AllTracks-slider {
+    margin-top: 40px;
+}
+
+.main__AllTracks-slider-arrow {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 120;
+}
+
+.main__AllTracks-slider-arrow-left {
+    left: 20px;
+}
+
+.main__AllTracks-slider-arrow-right {
+    right: 20px;
+}
+
+.main__AllTracks-slider-wrapper {}
+
+.slider {
+    display: flex;
+    align-items: flex-start;
+    gap: 22px;
+    justify-content: center;
+}
+
+.slide {}
+
+.MainSlide {
+    position: relative;
+}
+
+.MainSlide img {
+    border-radius: 10px;
+}
+
+.MainSlide::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 98.7%;
+    background-color: black;
+    opacity: 0.6;
+    border-radius: 10px;
+}
+
+.slide-info {
+    margin-top: 8px;
+}
+
+.MainSlideInfo {
+    position: absolute;
+    bottom: 20px;
+    left: 30px;
+}
+
+.MainSlideInfo button {
+    position: absolute;
+    top: 0;
+    left: 410px;
+}
+
+.MainSlideTitle {
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 55px;
+    color: var(--white);
+}
+
+.MainSlideArtist {
+    font-family: 'Nunito';
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 33px;
+    color: var(--gray);
+}
+
+.slide-info-artist {
+    font-family: 'Nunito';
+    font-weight: 500;
+    font-size: 21px;
+    line-height: 29px;
+    color: var(--white);
+}
+
+.slide-info-title {
+    font-family: 'Nunito';
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 25px;
+    color: var(--gray);
+}
