@@ -35,9 +35,24 @@ button {
     cursor: pointer;
 }
 
-.title {}
 
-.text {}
+.title {
+    font-family: 'Nunito';
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 65px;
+    color: var(--white);
+}
+
+
+.text {
+    font-family: 'Nunito';
+    font-weight: 300;
+    font-size: 21px;
+    line-height: 140%;
+
+    color: var(--white);
+}
 
 .container {
     max-width: 1785px;
@@ -154,14 +169,6 @@ audio {
 
 .main__AllTracks {
     margin-top: 85px;
-}
-
-.title {
-    font-family: 'Nunito';
-    font-weight: 600;
-    font-size: 48px;
-    line-height: 65px;
-    color: var(--white);
 }
 
 .main__AllTracks-slider {
@@ -295,3 +302,28 @@ audio {
     line-height: 25px;
     color: var(--gray);
 }
+
+
+
+
+::-webkit-scrollbar {
+    background-color: var(--black);
+    width: 7px;
+    border-radius: 100px;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background-color: var(--feolet);
+    border-radius: 100px;
+  }
+  
+  /* Для Firefox */
+  ::-moz-scrollbar {
+    background-color: var(--black);
+    
+    width: 10px;
+  }
+  
+  ::-moz-scrollbar-thumb {
+    background-color: var(--black);
+  }

@@ -78,8 +78,8 @@ let tracks = [
 function playTrack() {
     audio.src = tracks[trackIndex];
     audio.play();
-    updatePlayButtonState(); 
-    updatePlayButtonStateSlider(); 
+    updatePlayButtonState();
+    updatePlayButtonStateSlider();
 }
 
 function nextTrack() {
@@ -153,14 +153,25 @@ audio.addEventListener('timeupdate', savePlaybackProgress);
 window.addEventListener('load', restorePlaybackProgress);
 
 ////////Slider/////////
-    var swiper = new Swiper('.swiper', {
-        // Настройки Swiper
-        slidesPerView: 4,
-        spaceBetween: 20,
-        navigation: {
-            nextEl: '.main__AllTracks-slider-arrow-right',
-            prevEl: '.main__AllTracks-slider-arrow-left'
-        },
-        mousewheel: false,
-        loop: false
-    });
+var swiper = new Swiper('.swiper', {
+    // Настройки Swiper
+    slidesPerView: 4,
+    spaceBetween: 20,
+    navigation: {
+        nextEl: '.main__AllTracks-slider-arrow-right',
+        prevEl: '.main__AllTracks-slider-arrow-left'
+    },
+    mousewheel: false,
+    loop: false
+});
+
+
+//////Размытие/////
+
+window.addEventListener("DOMContentLoaded", function (event) {
+    var content = document.getElementById("content");
+    setTimeout(function () {
+        content.classList.remove("hidden");
+        content.style.opacity = 1;
+    }, 3000);
+});
