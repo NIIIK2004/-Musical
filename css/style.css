@@ -310,20 +310,56 @@ audio {
     background-color: var(--black);
     width: 7px;
     border-radius: 100px;
-  }
-  
-  ::-webkit-scrollbar-thumb {
+}
+
+::-webkit-scrollbar-thumb {
     background-color: var(--feolet);
     border-radius: 100px;
-  }
-  
-  /* Для Firefox */
-  ::-moz-scrollbar {
+}
+
+/* Для Firefox */
+::-moz-scrollbar {
     background-color: var(--black);
-    
+
     width: 10px;
+}
+
+::-moz-scrollbar-thumb {
+    background-color: var(--black);
+}
+
+
+
+.transition {
+    transition: all 0.3s ease-in-out;
+}
+
+
+
+.fullscreen-container {
+    opacity: 0;
+    transform: translateY(100%);
+    transition: opacity 0.3s, transform 0.3s;
+}
+
+.fullscreen-container.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+body {
+    overflow-x: hidden;
+}
+
+body.slide-out {
+    animation: slideOut .5s ease-in-out;
   }
   
-  ::-moz-scrollbar-thumb {
-    background-color: var(--black);
+  @keyframes slideOut {
+    from {
+      transform: translateY(0);
+    }
+    to {
+      transform: translateY(-100%);
+    }
   }
