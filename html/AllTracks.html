@@ -8,257 +8,211 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;500;600;700;800;900;1000&display=swap"
-        rel="stylesheet">
+          rel="stylesheet">
     <link rel="stylesheet" href="../css/header.css">
     <link rel="stylesheet" href="../css/reset.css">
     <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/tracks-main.css">
     <link rel="icon" href="../images/logo.svg">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
     <title>Musical - Главная</title>
 </head>
 
 <body>
-    <header class="header">
-        <div class="container">
-            <div class="header__menu-top">
-                <a href="AllTracks.html"><img src="../images/header/logotype.svg" class="header_logo"></a>
-                <ul class="header__links">
-                    <li class="header__link"><a href="search.html">Поиск <img src="../images/header/search.svg"></a>
-                    </li>
-                    <li class="header__link"><a href="AllTracks.html">Все треки <img
-                                src="../images/header/headphones.svg"></a></li>
-                    <li class="header__link"><a href="AllArtist.html">Артисты <img
-                                src="../images/header/artists.svg"></a></li>
-                    <li class="header__link"><a href="subscribe.html">Подписка <img src="../images/header/subs.svg"></a>
-                    </li>
-                    <li class="header__link"><a href="project.html">Проект <img src="../images/header/project.svg"></a>
-                    </li>
-                    <li class="header__link"><a href="collection.html">Коллекция <img
-                                src="../images/header/like.svg"></a></li>
-                </ul>
-                <div class="header_ets">
-                    <a href="setting.html" class="header_setting"><img src="../images/header/setting.svg" alt="set"></a>
-                    <a href="#" class="header_logout"><img src="../images/header/logout.svg" alt="log"></a>
-                </div>
+<header class="header">
+    <div class="container">
+        <div class="header__menu-top">
+            <a href="AllTracks.html"><img src="../images/header/logotype.svg" class="header_logo"></a>
+            <ul class="header__links">
+                <li class="header__link"><a href="search.html">Поиск <img src="../images/header/search.svg"></a>
+                </li>
+                <li class="header__link"><a href="AllTracks.html">Все треки <img
+                        src="../images/header/headphones.svg"></a></li>
+                <li class="header__link"><a href="AllArtist.html">Артисты <img
+                        src="../images/header/artists.svg"></a></li>
+                <li class="header__link"><a href="subscribe.html">Подписка <img src="../images/header/subs.svg"></a>
+                </li>
+                <li class="header__link"><a href="project.html">Проект <img src="../images/header/project.svg"></a>
+                </li>
+                <li class="header__link"><a href="collection.html">Коллекция <img
+                        src="../images/header/like.svg"></a></li>
+            </ul>
+            <div class="header_ets">
+                <a href="setting.html" class="header_setting"><img src="../images/header/setting.svg" alt="set"></a>
+                <a href="#" class="header_logout"><img src="../images/header/logout.svg" alt="log"></a>
             </div>
         </div>
-    </header>
-    <section class="main">
-        <div class="container">
-            <div class="main__AllTracks">
-                <h1 class="title">Релизы</h1>
-
-                <div class="main__AllTracks-slider">
-                    <span class="main__AllTracks-slider-arrow main__AllTracks-slider-arrow-left"><img
-                            src="../images/slider-arrow-left.svg" alt="arrow"></span>
-                    <span class="main__AllTracks-slider-arrow main__AllTracks-slider-arrow-right"><img
-                            src="../images/slider-arrow-right.svg" alt="arrow"></span>
-
-                    <div class="main__AllTracks-slider-wrapper swiper">
-                        <div class="swiper-wrapper">
-
-                            <div class="swiper-slide">
-                                <div class="track">
-                                    <img src="../images/cover/track-test-1.jpg" alt="maintrack">
-                                    <div class="slide-info MainSlideInfo">
-                                        <h3 class="MainSlideTitle">Polyphia</h3>
-                                        <p class="MainSlideArtist">Neurotica</p>
-                                        <button class="track__btn" onclick="toggleAudioSlider(event)"><img
-                                                id="playPauseIconSlider" src="../images/play-icon-for-slider.svg"
-                                                alt="Воспроизвести"></button>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="swiper-slide">
-                                <div class="track">
-                                    <img src="../images/cover/track-test-2.jpg" alt="maintrack">
-                                    <div class="slide-info MainSlideInfo">
-                                        <h3 class="MainSlideTitle">Polyphia</h3>
-                                        <p class="MainSlideArtist">Neurotica</p>
-                                        <button class="track__btn" onclick="toggleAudioSlider(event)"><img
-                                                id="playPauseIconSlider" src="../images/play-icon-for-slider.svg"
-                                                alt="Воспроизвести"></button>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="swiper-slide">
-                                <div class="track">
-                                    <img src="../images/cover/track-test-3.jpg" alt="maintrack">
-                                    <div class="slide-info MainSlideInfo">
-                                        <h3 class="MainSlideTitle">Polyphia</h3>
-                                        <p class="MainSlideArtist">Neurotica</p>
-                                        <button class="track__btn" onclick="toggleAudioSlider(event)"><img
-                                                id="playPauseIconSlider" src="../images/play-icon-for-slider.svg"
-                                                alt="Воспроизвести"></button>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="swiper-slide">
-                                <div class="track">
-                                    <img src="../images/cover/track-test-4.jpg" alt="maintrack">
-                                    <div class="slide-info MainSlideInfo">
-                                        <h3 class="MainSlideTitle">Polyphia</h3>
-                                        <p class="MainSlideArtist">Neurotica</p>
-                                        <button class="track__btn" onclick="toggleAudioSlider(event)"><img
-                                                id="playPauseIconSlider" src="../images/play-icon-for-slider.svg"
-                                                alt="Воспроизвести"></button>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="swiper-slide">
-                                <div class="track">
-                                    <img src="../images/cover/track-test-5.jpg" alt="maintrack">
-                                    <div class="slide-info MainSlideInfo">
-                                        <h3 class="MainSlideTitle">Polyphia</h3>
-                                        <p class="MainSlideArtist">Neurotica</p>
-                                        <button class="track__btn" onclick="toggleAudioSlider(event)"><img
-                                                id="playPauseIconSlider" src="../images/play-icon-for-slider.svg"
-                                                alt="Воспроизвести"></button>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="swiper-slide">
-                                <div class="track">
-                                    <img src="../images/cover/track-test-2.jpg" alt="maintrack">
-                                    <div class="slide-info MainSlideInfo">
-                                        <h3 class="MainSlideTitle">Polyphia</h3>
-                                        <p class="MainSlideArtist">Neurotica</p>
-                                        <button class="track__btn" onclick="toggleAudioSlider(event)"><img
-                                                id="playPauseIconSlider" src="../images/play-icon-for-slider.svg"
-                                                alt="Воспроизвести"></button>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="swiper-slide">
-                                <div class="track">
-                                    <img src="../images/cover/track-test-3.jpg" alt="maintrack">
-                                    <div class="slide-info MainSlideInfo">
-                                        <h3 class="MainSlideTitle">Polyphia</h3>
-                                        <p class="MainSlideArtist">Neurotica</p>
-                                        <button class="track__btn" onclick="toggleAudioSlider(event)"><img
-                                                id="playPauseIconSlider" src="../images/play-icon-for-slider.svg"
-                                                alt="Воспроизвести"></button>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- ////////////Тут обычные треки///////////// -->
-                            <!-- <div class="swiper-slide">
-                                <img src="../images/cover/track-test-2.jpg" alt="deftrack">
-                                <div class="slide-info">
-                                    <h3 class="slide-info-artist">Джизус</h3>
-                                    <p class="slide-info-title">Spirit of the World</p>
-                                </div>
-                            </div>
-                            <div class="swiper-slide">
-                                <img src="../images/cover/track-test-3.jpg" alt="deftrack">
-                                <div class="slide-info">
-                                    <h3 class="slide-info-artist">PHARAOH</h3>
-                                    <p class="slide-info-title">Всему свое время</p>
-                                </div>
-                            </div>
-                            <div class="swiper-slide">
-                                <img src="../images/cover/track-test-4.jpg" alt="deftrack">
-                                <div class="slide-info">
-                                    <h3 class="slide-info-artist">SALUKI</h3>
-                                    <p class="slide-info-title">Огней</p>
-                                </div>
-                            </div>
-                            <div class="swiper-slide">
-                                <img src="../images/cover/track-test-5.jpg" alt="deftrack">
-                                <div class="slide-info">
-                                    <h3 class="slide-info-artist">Никитка</h3>
-                                    <p class="slide-info-title">В поисках себя</p>
-                                </div>
-                            </div>
-                            <div class="swiper-slide">
-                                <img src="../images/cover/track-test-4.jpg" alt="deftrack">
-                                <div class="slide-info">
-                                    <h3 class="slide-info-artist">SALUKI</h3>
-                                    <p class="slide-info-title">Огней</p>
-                                </div>
-                            </div>
-                            <div class="swiper-slide">
-                                <img src="../images/cover/track-test-5.jpg" alt="deftrack">
-                                <div class="slide-info">
-                                    <h3 class="slide-info-artist">Никитка</h3>
-                                    <p class="slide-info-title">В поисках себя</p>
-                                </div>
-                            </div> -->
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="bottom_panel">
-            <div class="container">
-                <div class="audio-container">
-
-                    <div class="audio-left-block">
-
-                        <div class="audio__info-wrapper">
-                            <img src="../images/cover/Nirvana_album_cover.svg.png" alt="Обложка аудио" width="40">
-                            <div class="track__info">
-                                <h3>Название аудио</h3>
-                                <p>Имя исполнителя</p>
-                            </div>
-                        </div>
-
-                        <div class="track-timeline">
-                            <div class="progress-bar">
-                                <div class="progress"></div>
-                                <div class="circle"></div>
-                            </div>
-                            <div class="time">
-                                <span class="current-time">00:00</span>
-                                <audio controls id="myAudio">
-                                    <source src="../audio/dzhizus-manyak-mp3.mp3" type="audio/mp3">
-                                    Ваш браузер не поддерживает воспроизведение аудио.
-                                </audio>
-                                <span class="total-time">00:00</span>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="controls">
-                        <button onclick="previousTrack()"><img src="../images/prev_song-icon.svg"
-                                alt="Пред трек"></button>
-                        <button onclick="toggleAudio(event)"><img id="playPauseIcon" src="../images/play-icon.svg"
+    </div>
+</header>
+<section class="main">
+    <div class="container">
+        <div class="tracks-main">
+            <h1 class="tracks-main__title title">Релизы</h1>
+            <ul class="tracks-main__list">
+                <li class="tracks-main__item">
+                    <div class="tracks-main__top">
+                        <img class="tracks-main__img" src="../images/cover/track-test-1.jpg" alt="" 
+                             height="260">
+                        <button class="tracks-main__btn" onclick="toggleAudioSlider(event)"><img
+                                id="playPauseIconSlider" src="../images/play-icon-for-slider.svg"
                                 alt="Воспроизвести"></button>
-
-                        <button onclick="nextTrack()"><img src="../images/next_song-icon.svg" alt="След трек"></button>
                     </div>
-
-                    <div class="audio-action_btn">
-
-                        <button onclick="toggleMute()">
-                            <img class="action_btn-sound-active btn" id="muteIcon" src="../images/sound-active-icon.svg"
-                                alt="Звук включен">
-                        </button>
-
-                        <button>
-                            <img class="action_btn-repeat btn" src="../images/repeat-icon.svg" alt="На повтор">
-                        </button>
-
-                        <button>
-                            <img class="action_btn btn-shuffle" src="../images/shuffle-icon.svg" alt="Перемешка">
-                        </button>
-
-                        <button>
-                            <img class="action_btn-more btn" src="../images/more-icon.svg" alt="Еще больше">
-                        </button>
-
-                        <button id="fullscreen-container" class="transition">
-                            <img class="action_btn-maximize btn" src="../images/maximize-icon.svg" alt="На весь экран">
+                    <h3 class="tracks-main__name">Polyphia</h3>
+                    <span class="tracks-main__album">Neurotica</span>
+                </li>
+                <li class="tracks-main__item">
+                    <div class="tracks-main__top">
+                        <img class="tracks-main__img" src="../images/cover/track-test-2.jpg" alt="" 
+                             height="260">
+                        <button class="tracks-main__btn" onclick="toggleAudioSlider(event)">
+                            <img
+                                id="playPauseIconSlider" src="../images/play-icon-for-slider.svg"
+                                alt="Воспроизвести">
                         </button>
                     </div>
+                    <h3 class="tracks-main__name">Джизус</h3>
+                    <span class="tracks-main__album">47: Revolution and World</span>
+                </li>
+                <li class="tracks-main__item">
+                    <div class="tracks-main__top">
+                        <img class="tracks-main__img" src="../images/cover/track-test-3.jpg" alt="" 
+                             height="260">
+                        <button class="tracks-main__btn" onclick="toggleAudioSlider(event)"><img
+                                id="playPauseIconSlider" src="../images/play-icon-for-slider.svg"
+                                alt="Воспроизвести"></button>
+                    </div>
+                    <h3 class="tracks-main__name">Джизус</h3>
+                    <span class="tracks-main__album">Spirit of the World</span>
+                </li>
+                <li class="tracks-main__item">
+                    <div class="tracks-main__top">
+                        <img class="tracks-main__img" src="../images/cover/track-test-4.jpg" alt="" 
+                             height="260">
+                        <button class="tracks-main__btn" onclick="toggleAudioSlider(event)"><img
+                                id="playPauseIconSlider" src="../images/play-icon-for-slider.svg"
+                                alt="Воспроизвести"></button>
+                    </div>
+                    <h3 class="tracks-main__name">PHARAOH</h3>
+                    <span class="tracks-main__album">Всему свое время</span>
+                </li>
+                <li class="tracks-main__item">
+                    <div class="tracks-main__top">
+                        <img class="tracks-main__img" src="../images/cover/track-test-5.jpg" alt="" 
+                             height="260">
+                        <button class="tracks-main__btn" onclick="toggleAudioSlider(event)"><img
+                                id="playPauseIconSlider" src="../images/play-icon-for-slider.svg"
+                                alt="Воспроизвести"></button>
+                    </div>
+                    <h3 class="tracks-main__name">SALUKI</h3>
+                    <span class="tracks-main__album">Огней</span>
+                </li>
+                <li class="tracks-main__item">
+                    <div class="tracks-main__top">
+                        <img class="tracks-main__img" src="../images/cover/track-test-4.jpg" alt="" 
+                             height="260">
+                        <button class="tracks-main__btn" onclick="toggleAudioSlider(event)"><img
+                                id="playPauseIconSlider" src="../images/play-icon-for-slider.svg"
+                                alt="Воспроизвести"></button>
+                    </div>
+                    <h3 class="tracks-main__name">Никитка</h3>
+                    <span class="tracks-main__album">В поисках себя</span>
+                </li>
+                <li class="tracks-main__item">
+                    <div class="tracks-main__top">
+                        <img class="tracks-main__img" src="../images/cover/track-test-5.jpg" alt=""
+                             height="260">
+                        <button class="tracks-main__btn" onclick="toggleAudioSlider(event)"><img
+                                id="playPauseIconSlider" src="../images/play-icon-for-slider.svg"
+                                alt="Воспроизвести"></button>
+                    </div>
+                    <h3 class="tracks-main__name">SALUKI</h3>
+                    <span class="tracks-main__album">Огней</span>
+                </li>
+                <li class="tracks-main__item">
+                    <div class="tracks-main__top">
+                        <img class="tracks-main__img" src="../images/cover/track-test-4.jpg" alt=""
+                             height="260">
+                        <button class="tracks-main__btn" onclick="toggleAudioSlider(event)"><img
+                                id="playPauseIconSlider" src="../images/play-icon-for-slider.svg"
+                                alt="Воспроизвести"></button>
+                    </div>
+                    <h3 class="tracks-main__name">Никитка</h3>
+                    <span class="tracks-main__album">В поисках себя</span>
+                </li>
+            </ul>
+            <button class="tracks-main__more" id="loadMoreButton">Показать ещё</button>
+        </div>
+    </div>
+    <div class="bottom_panel">
+        <div class="container">
+            <div class="audio-container">
+
+                <div class="audio-left-block">
+
+                    <div class="audio__info-wrapper">
+                        <img src="../images/cover/Nirvana_album_cover.svg.png" alt="Обложка аудио" width="40">
+                        <div class="track__info">
+                            <h3>Название аудио</h3>
+                            <p>Имя исполнителя</p>
+                        </div>
+                    </div>
+
+                    <div class="track-timeline">
+                        <div class="progress-bar">
+                            <div class="progress"></div>
+                            <div class="circle"></div>
+                        </div>
+                        <div class="time">
+                            <span class="current-time">00:00</span>
+                            <audio controls id="myAudio">
+                                <source src="../audio/dzhizus-manyak-mp3.mp3" type="audio/mp3">
+                                Ваш браузер не поддерживает воспроизведение аудио.
+                            </audio>
+                            <span class="total-time">00:00</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="controls">
+                    <button onclick="previousTrack()"><img src="../images/prev_song-icon.svg"
+                                                           alt="Пред трек"></button>
+                    <button onclick="toggleAudio(event)"><img id="playPauseIcon" src="../images/play-icon.svg"
+                                                              alt="Воспроизвести"></button>
+
+                    <button onclick="nextTrack()"><img src="../images/next_song-icon.svg" alt="След трек"></button>
+                </div>
+
+                <div class="audio-action_btn">
+
+                    <button onclick="toggleMute()">
+                        <img class="action_btn-sound-active btn" id="muteIcon" src="../images/sound-active-icon.svg"
+                             alt="Звук включен">
+                    </button>
+
+                    <button>
+                        <img class="action_btn-repeat btn" src="../images/repeat-icon.svg" alt="На повтор">
+                    </button>
+
+                    <button>
+                        <img class="action_btn btn-shuffle" src="../images/shuffle-icon.svg" alt="Перемешка">
+                    </button>
+
+                    <button>
+                        <img class="action_btn-more btn" src="../images/more-icon.svg" alt="Еще больше">
+                    </button>
+
+                    <button id="fullscreen-container" class="transition">
+                        <img class="action_btn-maximize btn" src="../images/maximize-icon.svg" alt="На весь экран">
+                    </button>
                 </div>
             </div>
         </div>
-    </section>
+    </div>
+</section>
 </body>
 <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-
+<script src="../js/tracks-main.js"></script>
 <script src="../js/perehod.js"></script>
 <script src="../js/main.js"></script>
 
