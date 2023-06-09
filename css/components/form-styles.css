@@ -1,0 +1,40 @@
+.label {
+    display: block;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.input {
+    padding: 20px 15px;
+    font-size: 16px;
+    display: block;
+    width: 100%;
+    border-radius: 10px;
+    border: 2px solid #8478ff;
+    color: #f4f4f4;
+    -webkit-transition: border-color .3s;
+    -o-transition: border-color .3s;
+    transition: border-color .3s;
+    background-color: transparent;
+}
+
+.input:hover {
+    border-color: #8478ff;
+}
+
+.error {
+    color: #ff3939;
+    margin-top: 6px;
+    display: none;
+    font-size: 16px;
+}
+
+.error--active {
+    display: block;
+}
+
+.textarea {
+    min-height: 200px;
+    max-height: 400px;
+    resize: vertical;
+}
