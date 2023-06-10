@@ -1,10 +1,8 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-</head>
-<body>
+updateFileName();
 
-</body>
-</html>
+function updateFileName() {
+    let input = document.getElementById('photo');
+    let fileName = input.files[0].name;
+    let fileLabel = document.getElementById('file-upload-label');
+    fileLabel.innerHTML = fileName;
+}

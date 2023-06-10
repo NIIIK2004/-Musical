@@ -1,26 +1,31 @@
-$(document).ready(function () {
-    $('.slick').slick({
-        centerMode: true,
-        slidesToShow: 3,
-        autoplay: true,
-        autoplaySpeed: 2000,
-        responsive: [
-            {
-                breakpoint: 768,
-                settings: {
-                    arrows: false,
-                    centerMode: true,
-                    slidesToShow: 2
-                }
-            },
-            {
-                breakpoint: 480,
-                settings: {
-                    arrows: false,
-                    centerMode: true,
-                    slidesToShow: 1
-                }
-            }
-        ]
-    });
+// const swiper = new Swiper('.theme__swiper', {
+//     slidesPerView: 'auto',
+//     spaceBetween: 30,
+//     centeredSlides: true,
+//     loop: true,
+//     autoplay: {
+//         delay: 5,
+//         disableOnInteraction: false,
+//     },
+//     speed: 4000,
+//     direction: 'horizontal'
+// });
+
+
+const swiper = new Swiper('.theme__swiper', {
+    slidesPerView: 'auto',
+    spaceBetween: 30,
+    centeredSlides: true,
+    loop: true,
+    allowTouchMove: false,
+    autoplay: {
+        delay: -500,
+        disableOnInteraction: false,
+        reverseDirection: true
+    },
+    speed: 4000,
+    direction: 'horizontal'
 });
+
+
+AOS.init();

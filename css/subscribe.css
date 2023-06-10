@@ -238,29 +238,43 @@
     height: 300px;
 }
 
-.newtheme {
+.theme {
     margin-top: 120px;
     padding: 100px 0;
     background: #101010;
 }
 
-.newtheme__title {
-    font-family: 'Nunito';
+.theme__swiper {
+    overflow: hidden;
+}
+
+.theme__swiper .swiper-slide {
+    width: auto;
+}
+
+.theme__title {
     font-weight: 500;
     font-size: 32px;
-    line-height: 44px;
+    line-height: 1;
+    margin-bottom: 60px;
     text-align: center;
     color: var(--white);
 }
 
-.newtheme__decrip {
+.theme__description {
     margin-top: 80px;
-    font-family: 'Nunito';
     font-weight: 300;
     font-size: 36px;
     line-height: 49px;
     text-align: left;
     color: var(--white);
+}
+
+.theme__img {
+    object-fit: cover;
+    object-position: center;
+    background-repeat: no-repeat;
+    border-radius: 15px;
 }
 
 .gradient {

@@ -1,40 +1,8 @@
-*,
-*::before,
-*::after {
-    box-sizing: border-box;
-}
-
-a {
-    color: #272727;
-    text-decoration: none;
-}
-
-ul {
-    list-style: none;
-}
-
-:root {
-    --feolet: #5347CC;
-    --white: #F8F8F8;
-    --black: #0B0B0B;
-    --gray: #CDCDCD;
-}
-
-body {
-    background: var(--black);
-    font-family: 'Nunito', sans-serif;
-    font-weight: 300;
-    line-height: 140%;
-    color: var(--white);
-}
-
-button {
-    background: none;
-    outline: none;
-    border: transparent;
-    cursor: pointer;
-}
-
+@import 'global.css';
+@import 'components/modal.css';
+@import 'components/form-styles.css';
+@import 'components/custom-file.css';
+@import 'components/fonts.css';
 
 .title {
     font-family: 'Nunito';
@@ -43,7 +11,6 @@ button {
     line-height: 65px;
     color: var(--white);
 }
-
 
 .text {
     font-family: 'Nunito';
@@ -67,6 +34,7 @@ button {
     bottom: 0;
     left: 0;
     width: 100%;
+    z-index: 300;
 }
 
 .audio-container {
@@ -74,7 +42,6 @@ button {
     align-items: center;
     position: relative;
     gap: 40px;
-
 }
 
 audio {
@@ -191,26 +158,11 @@ audio {
     right: 20px;
 }
 
-.main__AllTracks-slider-wrapper {}
-
 .slider {
     display: flex;
     align-items: flex-start;
     gap: 22px;
     justify-content: center;
-}
-
-.slide {}
-
-.swiper-slide {
-    width: 280px !important;
-    height: 280px !important;
-}
-
-.swiper-slide-active {
-    width: 545px !important;
-    height: 545px !important;
-    transition: height .5s, width .3s;
 }
 
 .track {
@@ -304,8 +256,6 @@ audio {
 }
 
 
-
-
 ::-webkit-scrollbar {
     background-color: var(--black);
     width: 7px;
@@ -329,11 +279,9 @@ audio {
 }
 
 
-
 .transition {
     transition: all 0.3s ease-in-out;
 }
-
 
 
 .fullscreen-container {
@@ -353,13 +301,75 @@ body {
 
 body.slide-out {
     animation: slideOut .5s ease-in-out;
-  }
-  
-  @keyframes slideOut {
+}
+
+@keyframes slideOut {
     from {
-      transform: translateY(0);
+        transform: translateY(0);
     }
+
     to {
-      transform: translateY(-100%);
+        transform: translateY(-100%);
     }
-  }
+}
+
+
+/* alert */
+
+.subs__warn {
+    z-index: 500;
+    position: fixed;
+    padding: 20px;
+    border-radius: 13px;
+    border: 1px solid transparent;
+    transition: all .5s;
+    min-width: 300px;
+    min-height: 200px;
+    bottom: 12.7%;
+    right: 6%;
+    background: #1B1B1B;
+    pointer-events: none;
+
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.3s ease, transform 0.3s ease, border .5s;
+}
+
+.subs__warn:hover {
+    border: 1px solid var(--feolet);
+}
+
+.subs__warn.visible {
+    opacity: 1;
+    transform: translateY(0);
+    pointer-events: auto;
+}
+
+.subs__warn p {
+    max-width: 260px;
+    margin-top: 11px;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 25px;
+    color: var(--white);
+}
+
+.subs__warn-close {
+    display: block;
+    margin-left: auto;
+}
+
+.subs__warn-subs {
+    display: block;
+    margin-top: 20px;
+    text-align: center;
+    padding: 11px 5.5px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 140%;
+    color: var(--white);
+    background: #000;
+    border-radius: 7px;
+    width: 100%;
+    background: linear-gradient(92.05deg, #4A3AF2 44.53%, #CD3FFF 74.96%, #DA138A 105.45%);
+}

@@ -14,6 +14,8 @@
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="../css/subscribe.css">
     <link rel="icon" href="../images/logo.svg">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
 
     <title>Musical - Подписка</title>
 </head>
@@ -45,7 +47,7 @@
         </div>
     </header>
 
-    <section class="one-page">
+    <section class="one-page" data-aos="fade-up" data-aos-duration="1000" data-aos-anchor-placement="top-center">
         <div class="container">
             <div class="one-page__wrapper">
                 <img class="one-page-logo" src="../images/logo-premium.svg" alt="prema">
@@ -71,29 +73,34 @@
 
     <section class="plan">
         <div class="container">
-            <h2 class="plan__title">Не упустите возможность получить неограниченный доступ к музыке высокого качества
+            <h2 class="plan__title" data-aos="fade-up">Не упустите возможность получить неограниченный доступ к музыке
+                высокого качества
             </h2>
             <div class="plan_cards">
-                <div class="plan_card">
+                <div class="plan_card" data-aos="fade-up" data-aos-duration="600" data-aos-delay="300">
                     <div class="plan_card-title">
                         <h3>Слушатель</h3>
                         <img src="../images/plan-decor-1.svg">
                     </div>
 
                     <div class="plan_card-pluski">
-                        <span>Преимущества:</span>
+                        <span data-aos="fade-up" data-aos-delay="200" data-aos-duration="300">Преимущества:</span>
                         <ul>
-                            <li style="color: #2FF443;">Прослушивание треков</li>
-                            <li>Создание персональных плейлистов</li>
-                            <li>Доступ к подкастам</li>
-                            <li>Аудио в mp3 формате</li>
-                            <li>Несинхронизированные текста треков</li>
+                            <li data-aos="fade-up" data-aos-delay="200" data-aos-duration="600" style="color: #2FF443;">
+                                Прослушивание треков</li>
+                            <li data-aos="fade-up" data-aos-delay="200" data-aos-duration="800">Создание персональных
+                                плейлистов</li>
+                            <li data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000">Доступ к подкастам</li>
+                            <li data-aos="fade-up" data-aos-delay="200" data-aos-duration="1200">Аудио в mp3 формате
+                            </li>
+                            <li data-aos="fade-up" data-aos-delay="200" data-aos-duration="1400">Несинхронизированные
+                                текста треков</li>
                         </ul>
                     </div>
                     <button class="plan_card-btn" style="background-color: #2FF443;">Бесплатно</button>
                 </div>
 
-                <div class="plan_card">
+                <div class="plan_card" data-aos="fade-up" data-aos-duration="600" data-aos-delay="500">
                     <div class="plan_card-title">
                         <h3 style="background: linear-gradient(93.07deg, #E6E95B 3.51%, #F2F711 109.23%);
                         -webkit-background-clip: text;
@@ -104,15 +111,22 @@
                     </div>
 
                     <div class="plan_card-pluski">
-                        <span>Преимущества:</span>
+                        <span data-aos="fade-up" data-aos-delay="200" data-aos-duration="300">Преимущества:</span>
                         <ul>
-                            <li>Доступ к мобильной версии приложения</li>
-                            <li>Поддержка Hi-Res аудио</li>
-                            <li>Доступ к концертам в прямом эфире</li>
-                            <li>Аудио в FLAC формате</li>
-                            <li>Поддержка виртуальной реальности</li>
-                            <li>Смена тем (Кастомная)</li>
-                            <li style="color: #E6E95B;">Возможность создания собственного профиля и общения с другими
+                            <li data-aos="fade-up" data-aos-delay="200" data-aos-duration="600">Доступ к мобильной
+                                версии приложения</li>
+                            <li data-aos="fade-up" data-aos-delay="200" data-aos-duration="800">Поддержка Hi-Res аудио
+                            </li>
+                            <li data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000">Доступ к концертам в
+                                прямом эфире</li>
+                            <li data-aos="fade-up" data-aos-delay="200" data-aos-duration="1200">Аудио в FLAC формате
+                            </li>
+                            <li data-aos="fade-up" data-aos-delay="200" data-aos-duration="1400">Поддержка виртуальной
+                                реальности</li>
+                            <li data-aos="fade-up" data-aos-delay="200" data-aos-duration="1600">Смена тем (Кастомная)
+                            </li>
+                            <li data-aos="fade-up" data-aos-delay="200" data-aos-duration="1800"
+                                style="color: #E6E95B;">Возможность создания собственного профиля и общения с другими
                                 пользователями сервиса
                             </li>
                         </ul>
@@ -120,27 +134,36 @@
                     <button class="plan_card-btn" style="background-color: #E6E95B;">499,99 Рублей/Мес</button>
                 </div>
 
-                <div class="plan_card">
+                <div class="plan_card" data-aos="fade-up" data-aos-duration="600" data-aos-delay="700">
                     <div class="plan_card-title">
                         <h3 style="color: #6859FF;">Меломан</h3>
                         <img src="../images/plan-decor-3.svg">
                     </div>
 
                     <div class="plan_card-pluski">
-                        <span>Преимущества:</span>
+                        <span data-aos="fade-up" data-aos-delay="200" data-aos-duration="300">Преимущества:</span>
                         <ul>
-                            <li>Доступ к опр.функциям (shuffle, repeat)</li>
-                            <li>Возможность подписки на артиста</li>
-                            <li>Возможность загружать личные записи</li>
-                            <li>Аудио в WAV формате</li>
-                            <li>Синхронизированные текста треков</li>
-                            <li>Смена тем (Темная, Светлая)</li>
-                            <li>Эксклюзивный логотип “Musical Exclusive”</li>
-                            <li style="color: #6859FF;">Без рекламы и ненужных баннеров</li>
+                            <li data-aos="fade-up" data-aos-delay="200" data-aos-duration="600">Доступ к опр.функциям
+                                (shuffle, repeat)</li>
+                            <li data-aos="fade-up" data-aos-delay="200" data-aos-duration="800">Возможность подписки на
+                                артиста</li>
+                            <li data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000">Возможность загружать
+                                личные записи</li>
+                            <li data-aos="fade-up" data-aos-delay="200" data-aos-duration="1200">Аудио в WAV формате
+                            </li>
+                            <li data-aos="fade-up" data-aos-delay="200" data-aos-duration="1400">Синхронизированные
+                                текста треков</li>
+                            <li data-aos="fade-up" data-aos-delay="200" data-aos-duration="1600">Смена тем (Темная,
+                                Светлая)</li>
+                            <li data-aos="fade-up" data-aos-delay="200" data-aos-duration="1800">Эксклюзивный логотип
+                                “Musical Exclusive”</li>
+                            <li data-aos="fade-up" data-aos-delay="200" data-aos-duration="2000"
+                                style="color: #6859FF;">Без рекламы и ненужных баннеров</li>
                         </ul>
                     </div>
                     <button class="plan_card-btn" style="background-color: #5D50E1; color: #F8F8F8;">199,99
-                        Рублей/Мес</button>
+                        Рублей/Мес
+                    </button>
                 </div>
 
             </div>
@@ -155,23 +178,42 @@
         </div>
     </div>
 
-    <section class="newtheme">
-        <h2 class="newtheme__title">Что вас ждет?</h2>
-        <div class="slider-container">
-
+    <section class="theme">
+        <h2 class="theme__title" data-aos="fade-up">Что вас ждет?</h2>
+        <div class="theme__swiper" data-aos="fade-up" data-aos-duration="1500">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <img class="theme__img" src="../images/themes/1.jpg" alt="" width="730" height="410">
+                </div>
+                <div class="swiper-slide">
+                    <img class="theme__img" src="../images/themes/2.jpg" alt="" width="730" height="410">
+                </div>
+                <div class="swiper-slide">
+                    <img class="theme__img" src="../images/themes/3.jpg" alt="" width="730" height="410">
+                </div>
+                <div class="swiper-slide">
+                    <img class="theme__img" src="../images/themes/4.jpg" alt="" width="730" height="410">
+                </div>
+                <div class="swiper-slide">
+                    <img class="theme__img" src="../images/themes/1.jpg" alt="" width="730" height="410">
+                </div>
+                <div class="swiper-slide">
+                    <img class="theme__img" src="../images/themes/2.jpg" alt="" width="730" height="410">
+                </div>
+            </div>
         </div>
-
         <div class="container">
-            <p class="newtheme__decrip">Новые темы</p>
+            <p class="theme__description" data-aos="fade-up">Новые темы</p>
         </div>
     </section>
 
     <section class="profile">
         <div class="container">
-            <img src="../images/Чатик 1.png">
-            <p style="margin-left: 10%;">Собственный профиль</p>
-            <img src="../images/Чатик 2.png">
-            <p style="text-align: right; max-width: 830px; margin-left: 40%; margin-bottom: 120px;">А еще общение с
+            <img src="../images/Чатик 1.png" data-aos="fade-up" data-aos-duration="700" data-aos-delay="350">
+            <p style="margin-left: 10%;" data-aos="fade-up">Собственный профиль</p>
+            <img src="../images/Чатик 2.png" data-aos="fade-up" data-aos-duration="700" data-aos-delay="350">
+            <p data-aos="fade-up" style="text-align: right; max-width: 830px; margin-left: 40%; margin-bottom: 120px;">А
+                еще общение с
                 другими <span class="gradient">Exclusive</span> пользователями</p>
         </div>
     </section>
@@ -179,7 +221,7 @@
     <section class="etssubs">
         <div class="container">
             <div class="etssubs__wrapper">
-                <p>Подписка на артиста
+                <p data-aos="fade-up">Подписка на артиста
                     <br>
                     Покупка билетов на концерт прямо на сайте
                     <br>
@@ -187,14 +229,15 @@
                     <br>
                     И многое другое...
                 </p>
-                <img src="../images/Артист редизайн 1.png">
+                <img src="../images/Артист редизайн 1.png" data-aos="fade-up" data-aos-duration="350"
+                    data-aos-delay="650">
             </div>
         </div>
     </section>
 
     <section class="feedback">
         <div class="container">
-            <span>
+            <span data-aos="fade-up" data-aos-duration="1200">
                 Пока все =) Если остались вопросы<br>
                 Можете написать нам на почту: nikitaxxx840@gmail.com<br>
                 Мы с каждым днем стараемся улучшаться и придумывать что-то новое и необычное</span>
@@ -202,6 +245,8 @@
     </section>
 </body>
 
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
 <script src="../js/swiper-for-subs.js"></script>
 
 </html>
