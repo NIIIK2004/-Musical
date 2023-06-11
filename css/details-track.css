@@ -35,6 +35,10 @@
 }
 
 .details-track__btn {
+    font-family: 'Nunito';
+
+    font-weight: 400;
+    font-size: 21px;
     position: relative;
     font-size: 20px;
     line-height: 1;

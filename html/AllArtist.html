@@ -41,6 +41,7 @@
             </div>
         </div>
     </header>
+
     <section class="AllArtist">
         <div class="container">
             <div class="artist-main__top">
@@ -52,106 +53,15 @@
 
             <div class="AllArtist__wrapper">
                 <div class="artist">
-                    <img src="../images/artist.png" alt="artist">
-                    <p class="artist-name">PHARAOH</p>
-                </div>
-                <div class="artist">
-                    <img src="../images/artist.png" alt="artist">
-                    <p class="artist-name">PHARAOH</p>
-                </div>
-                <div class="artist">
-                    <img src="../images/artist.png" alt="artist">
-                    <p class="artist-name">PHARAOH</p>
-                </div>
-                <div class="artist">
-                    <img src="../images/artist.png" alt="artist">
-                    <p class="artist-name">PHARAOH</p>
-                </div>
-                <div class="artist">
-                    <img src="../images/artist.png" alt="artist">
-                    <p class="artist-name">PHARAOH</p>
-                </div>
-                <div class="artist">
-                    <img src="../images/artist.png" alt="artist">
+                    <img src="../images/artist.webp" alt="artist">
                     <p class="artist-name">PHARAOH</p>
                 </div>
 
             </div>
         </div>
     </section>
-    <div class="modal" id="modal-edit_release">
-        <button class="modal__close" onclick="modal_releaseClose()">
-            <svg width="22" height="22" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M8.99998 8.99998L1 1" stroke="white" stroke-width="1" stroke-linecap="round"
-                    stroke-linejoin="round" />
-                <path d="M9.00002 1L1 9.00002" stroke="white" stroke-width="1" stroke-linecap="round"
-                    stroke-linejoin="round" />
-            </svg>
-        </button>
-        <h2 class="modal__title" id="edit_modal__title">Добавление релиза</h2>
-        <form class="modal__form" enctype="multipart/form-data">
-            <ul class="modal__list">
-                <li class="modal__item">
-                    <label class="label" for="name">Название</label>
-                    <input class="input" type="text" id="name" name="name" placeholder="Введите название">
-                    <span class="error">Название не должно содержать цифры. Минимальное количество символов - 3,
-                        максимальное - 50</span>
-                </li>
-                <li class="modal__item">
-                    <label class="label" for="price">Цена в ₽</label>
-                    <input class="input" type="number" id="price" name="price" placeholder="Введите цену">
-                    <span class="error">Минимальная цена - 500, максимальная - 50000</span>
-                </li>
-                <li class="modal__item">
-                    <label class="label" for="description">Описание торта</label>
-                    <textarea class="input textarea" id="description" name="description" placeholder="Введите текст"
-                        value="${cake.description}"></textarea>
-                </li>
-                <li class="modal__item">
-                    <span class="label">Фотография</span>
-                    <div class="file-upload-container">
-                        <input type="file" id="photo" name="photo" onchange="updateFileName(event)">
-                        <label class="custom-file-upload" for="photo" id="file-upload-label">
-                            Загрузить файл
-                        </label>
-                    </div>
-                </li>
-            </ul>
-            <div class="modal__buttons">
-                <button class="modal__btn" type="button" onclick="modal_releaseClose()">Отменить</button>
-                <button class="modal__btn" type="button" onclick="modal_saveRelease()">Сохранить</button>
-            </div>
-        </form>
-    </div>
-    <div class="modal modal--delete" id="modal-delete_release">
-        <button class="modal__close" onclick="modal_DeleteReleaseClose()">
-            <svg width="22" height="22" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M8.99998 8.99998L1 1" stroke="white" stroke-width="1" stroke-linecap="round"
-                    stroke-linejoin="round" />
-                <path d="M9.00002 1L1 9.00002" stroke="white" stroke-width="1" stroke-linecap="round"
-                    stroke-linejoin="round" />
-            </svg>
-        </button>
-        <div class="modal__inner">
-            <p class="modal__text">
-                Вы действительно хотите удалить "<span id="release_name-delete"></span>?" Отменить это действие будет
-                невозможно.
-            </p>
-            <form class="modal__form-actions" action="">
-                <div class="modal__buttons">
-                    <button class="modal__btn" type="button" id="button-delete_cake" onclick="deleteRelease()">Удалить
-                    </button>
-                    <button class="modal__btn" type="button" id="button-cancel_cake"
-                        onclick="modal_DeleteReleaseClose()">
-                        Отмена
-                    </button>
-                </div>
-            </form>
-        </div>
-    </div>
 </body>
 <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
-<script src="../js/tracks-main.js"></script>
 <script src="../js/main.js"></script>
 
 </html>

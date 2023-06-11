@@ -14,14 +14,10 @@ a {
     margin: 50px 0 85px;
 }
 
-.container {}
-
 .header__menu-top {
     display: flex;
     align-items: center;
 }
-
-.header_logo {}
 
 .header__links {
     display: flex;
@@ -35,8 +31,6 @@ a {
     margin-left: auto;
     margin-right: 40px;
 }
-
-.header__link {}
 
 .header__link img {
     top: 5px;
@@ -52,11 +46,8 @@ a {
     gap: 20px;
 }
 
-.header_setting {}
-
 .header_setting,
 .header_logout {
     display: flex;
     align-items: center;
-    /* Выравнивание по вертикали */
 }

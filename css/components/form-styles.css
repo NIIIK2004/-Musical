@@ -10,16 +10,21 @@
     display: block;
     width: 100%;
     border-radius: 10px;
-    border: 2px solid #8478ff;
-    color: #f4f4f4;
-    -webkit-transition: border-color .3s;
-    -o-transition: border-color .3s;
-    transition: border-color .3s;
-    background-color: transparent;
+    border: 1px solid transparent;
+    color: var(--white);
+    background: #1A1A1A;
+    outline: none;
+    transition: all .4s;
 }
 
-.input:hover {
-    border-color: #8478ff;
+input::placeholder {
+    font-family: 'Nunito';
+    font-weight: 500;
+}
+
+input:focus {
+    border: 1px solid var(--feolet);
+    background: transparent;
 }
 
 .error {
@@ -34,7 +39,20 @@
 }
 
 .textarea {
+    transition: all .4s;
     min-height: 200px;
     max-height: 400px;
     resize: vertical;
+
+    font-family: 'Nunito';
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 22px;
+    color: var(--white);
+    border: 1px solid transparent;
+}
+
+.textarea:focus {
+    background: transparent;
+    border: 1px solid var(--feolet);
 }

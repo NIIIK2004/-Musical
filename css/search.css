@@ -11,7 +11,8 @@
     outline: none;
     width: 100%;
     display: block;
-    border: transparent;
+    border: 1px solid transparent;
+    transition: all .4s;
 }
 
 .search_tracks-img {
@@ -33,10 +34,6 @@ input[type="search"]::-webkit-search-cancel-button {
     display: none;
 }
 
-.search__track {}
-
-.container {}
-
 .search__track-wrapper {
     margin-top: 30px;
     display: flex;
@@ -55,8 +52,6 @@ input[type="search"]::-webkit-search-cancel-button {
     align-items: center;
     gap: 22px;
 }
-
-.search__track-left-info {}
 
 .search__track-left-info p {
     margin-bottom: 6px;
