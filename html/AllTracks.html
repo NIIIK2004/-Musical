@@ -339,23 +339,37 @@
         <form class="modal__form" enctype="multipart/form-data">
             <ul class="modal__list">
                 <li class="modal__item">
-                    <label class="label" for="name">Название</label>
-                    <input class="input" type="text" id="name" name="name" placeholder="Введите название">
-                    <span class="error">Название не должно содержать цифры. Минимальное количество символов - 3,
-                        максимальное - 50</span>
+                    <label class="label" for="name">Название релиза</label>
+                    <input class="input" type="text" id="name" name="name" placeholder="Введите название релиза">
+                    <span class="error">Тут надо написать ошибку</span>
                 </li>
                 <li class="modal__item">
-                    <label class="label" for="price">Цена в ₽</label>
-                    <input class="input" type="number" id="price" name="price" placeholder="Введите цену">
-                    <span class="error">Минимальная цена - 500, максимальная - 50000</span>
+                    <label class="label" for="price">Исполнитель</label>
+                    <input class="input" type="text" id="price" name="price" placeholder="Введите исполнителя">
+                    <span class="error">Тут надо написать ошибку</span>
                 </li>
                 <li class="modal__item">
-                    <label class="label" for="description">Описание торта</label>
+                    <label class="label" for="description">Текст трека</label>
                     <textarea class="input textarea" id="description" name="description" placeholder="Введите текст"
-                        value="${cake.description}"></textarea>
+                        value=""></textarea>
                 </li>
                 <li class="modal__item">
-                    <span class="label">Фотография</span>
+                    <label class="label" for="price">Предпочитаемый жанр</label>
+                    <input class="input" type="text" id="price" name="price" placeholder="Введите цену">
+                    <span class="error">Тут надо написать ошибку</span>
+                </li>
+                <li class="modal__item">
+                    <label class="label" for="price">Год выпуска трека</label>
+                    <input class="input" type="text" id="price" name="price" placeholder="Введите цену">
+                    <span class="error">Тут надо написать ошибку</span>
+                </li>
+                <li class="modal__item">
+                    <label class="label" for="description">Описание трека или известные цитаты</label>
+                    <textarea class="input textarea" id="description" name="description" placeholder="Введите текст"
+                        value=""></textarea>
+                </li>
+                <li class="modal__item">
+                    <span class="label">Загрузите обложку</span>
                     <div class="file-upload-container">
                         <input type="file" id="photo" name="photo" onchange="updateFileName(event)">
                         <label class="custom-file-upload" for="photo" id="file-upload-label">

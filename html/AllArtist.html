@@ -5,10 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;500;600;700;800;900;1000&display=swap"
-        rel="stylesheet">
+
     <link rel="stylesheet" href="../css/header.css">
     <link rel="stylesheet" href="../css/reset.css">
     <link rel="stylesheet" href="../css/style.css">
@@ -24,15 +21,18 @@
             <div class="header__menu-top">
                 <a href="AllTracks.html"><img src="../images/header/logotype.svg" class="header_logo"></a>
                 <ul class="header__links">
-                    <li class="header__link"><a href="search.html">Поиск <img src="../images/header/search.svg"></a></li>
+                    <li class="header__link"><a href="search.html">Поиск <img src="../images/header/search.svg"></a>
+                    </li>
                     <li class="header__link"><a href="AllTracks.html">Все треки <img
                                 src="../images/header/headphones.svg"></a></li>
                     <li class="header__link"><a href="AllArtist.html">Артисты <img
                                 src="../images/header/artists.svg"></a></li>
                     <li class="header__link"><a href="subscribe.html">Подписка <img src="../images/header/subs.svg"></a>
                     </li>
-                    <li class="header__link"><a href="project.html">Проект <img src="../images/header/project.svg"></a></li>
-                    <li class="header__link"><a href="collection.html">Коллекция <img src="../images/header/like.svg"></a></li>
+                    <li class="header__link"><a href="project.html">Проект <img src="../images/header/project.svg"></a>
+                    </li>
+                    <li class="header__link"><a href="collection.html">Коллекция <img
+                                src="../images/header/like.svg"></a></li>
                 </ul>
                 <div class="header_ets">
                     <a href="setting.html" class="header_setting"><img src="../images/header/setting.svg" alt="set"></a>
@@ -43,7 +43,12 @@
     </header>
     <section class="AllArtist">
         <div class="container">
-            <h1 class="title">Артисты</h1>
+            <div class="artist-main__top">
+                <h1 class="title">Артисты</h1>
+                <button class="artist-main__top-button" onclick="modal_addRelease()">
+                    <img src="../images/admin-add-entity.svg">
+                </button>
+            </div>
 
             <div class="AllArtist__wrapper">
                 <div class="artist">
@@ -74,8 +79,79 @@
             </div>
         </div>
     </section>
+    <div class="modal" id="modal-edit_release">
+        <button class="modal__close" onclick="modal_releaseClose()">
+            <svg width="22" height="22" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M8.99998 8.99998L1 1" stroke="white" stroke-width="1" stroke-linecap="round"
+                    stroke-linejoin="round" />
+                <path d="M9.00002 1L1 9.00002" stroke="white" stroke-width="1" stroke-linecap="round"
+                    stroke-linejoin="round" />
+            </svg>
+        </button>
+        <h2 class="modal__title" id="edit_modal__title">Добавление релиза</h2>
+        <form class="modal__form" enctype="multipart/form-data">
+            <ul class="modal__list">
+                <li class="modal__item">
+                    <label class="label" for="name">Название</label>
+                    <input class="input" type="text" id="name" name="name" placeholder="Введите название">
+                    <span class="error">Название не должно содержать цифры. Минимальное количество символов - 3,
+                        максимальное - 50</span>
+                </li>
+                <li class="modal__item">
+                    <label class="label" for="price">Цена в ₽</label>
+                    <input class="input" type="number" id="price" name="price" placeholder="Введите цену">
+                    <span class="error">Минимальная цена - 500, максимальная - 50000</span>
+                </li>
+                <li class="modal__item">
+                    <label class="label" for="description">Описание торта</label>
+                    <textarea class="input textarea" id="description" name="description" placeholder="Введите текст"
+                        value="${cake.description}"></textarea>
+                </li>
+                <li class="modal__item">
+                    <span class="label">Фотография</span>
+                    <div class="file-upload-container">
+                        <input type="file" id="photo" name="photo" onchange="updateFileName(event)">
+                        <label class="custom-file-upload" for="photo" id="file-upload-label">
+                            Загрузить файл
+                        </label>
+                    </div>
+                </li>
+            </ul>
+            <div class="modal__buttons">
+                <button class="modal__btn" type="button" onclick="modal_releaseClose()">Отменить</button>
+                <button class="modal__btn" type="button" onclick="modal_saveRelease()">Сохранить</button>
+            </div>
+        </form>
+    </div>
+    <div class="modal modal--delete" id="modal-delete_release">
+        <button class="modal__close" onclick="modal_DeleteReleaseClose()">
+            <svg width="22" height="22" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M8.99998 8.99998L1 1" stroke="white" stroke-width="1" stroke-linecap="round"
+                    stroke-linejoin="round" />
+                <path d="M9.00002 1L1 9.00002" stroke="white" stroke-width="1" stroke-linecap="round"
+                    stroke-linejoin="round" />
+            </svg>
+        </button>
+        <div class="modal__inner">
+            <p class="modal__text">
+                Вы действительно хотите удалить "<span id="release_name-delete"></span>?" Отменить это действие будет
+                невозможно.
+            </p>
+            <form class="modal__form-actions" action="">
+                <div class="modal__buttons">
+                    <button class="modal__btn" type="button" id="button-delete_cake" onclick="deleteRelease()">Удалить
+                    </button>
+                    <button class="modal__btn" type="button" id="button-cancel_cake"
+                        onclick="modal_DeleteReleaseClose()">
+                        Отмена
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
 </body>
 <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+<script src="../js/tracks-main.js"></script>
 <script src="../js/main.js"></script>
 
 </html>

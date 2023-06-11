@@ -17,7 +17,7 @@ showMore.addEventListener('click', () => {
     const visibleItems = array.slice(0, items);
 
     visibleItems.forEach(el => el.classList.add('is-visible'));
-    if(visibleItems.length === itemsLength) {
+    if (visibleItems.length === itemsLength) {
         showMore.style.display = 'none';
     }
 });
@@ -35,19 +35,19 @@ fullscreenButton.addEventListener("click", function (event) {
     }
 });
 
-document.addEventListener("DOMContentLoaded", function() {
+document.addEventListener("DOMContentLoaded", function () {
     const tabButtons = document.querySelectorAll(".details-track__btn");
     const tabContents = document.querySelectorAll(".details-track__tab");
 
     tabButtons[0].classList.add("active");
     tabContents[0].classList.add("active");
 
-    tabButtons.forEach(function(button, index) {
-        button.addEventListener("click", function() {
-            tabButtons.forEach(function(btn) {
+    tabButtons.forEach(function (button, index) {
+        button.addEventListener("click", function () {
+            tabButtons.forEach(function (btn) {
                 btn.classList.remove("active");
             });
-            tabContents.forEach(function(content) {
+            tabContents.forEach(function (content) {
                 content.classList.remove("active");
             });
             button.classList.add("active");
@@ -57,7 +57,7 @@ document.addEventListener("DOMContentLoaded", function() {
 });
 
 function modal_addRelease() {
-    modal_RealiseOpen("Создание релиза");
+    modal_RealiseOpen("Добавление релиза");
     $("#release_name").val("")
     curr_realise_id = -1;
 }
@@ -92,7 +92,7 @@ function modal_EditRelease() {
     $("#price-release").val(release_price);
     $("#description-release").val(release_description);
 
-    let dataContent ={
+    let dataContent = {
         id: curr_realise_id,
         name: release_name,
         price: release_price,
