@@ -15,23 +15,51 @@
 </head>
 
 <body>
-    <section class="vhod__page">
-        <div class="container__vhod">
-            <img src="../images/" alt="">
-            <h1 class="vhod__title">Привет, зарегистрируемся?!</h1>
-            <div class="vhod__wrapper">
-                <form>
-                    <input type="text" placeholder="Логин" required>
-                    <input type="password" placeholder="Пароль" required>
-                    <input type="name" placeholder="Имя" required>
-                    <input type="text" placeholder="Фамилия" required>
-                    <input type="email" placeholder="Почта" required>
-                    <a href="SingIn.html">Аккаунт имеется, Войти?</a>
-                    <button class="vhod-btn">Зарегистрироваться</button>
-                </form>
+    <div id="video-container">
+        <video id="welcome-video" width="100%" height="100%" autoplay muted>
+            <source src="../images/Video/intro.MP4" type="video/mp4">
+        </video>
+        <section class="vhod__page" id="registration-form">
+            <div class="container__vhod">
+                <img src="../images/header/logotype.svg" alt=""
+                    style="margin: 0 auto; display: block; margin-bottom: 70px;">
+                <h1 class="vhod__title">Регистрация</h1>
+                <div class="vhod__wrapper">
+                    <form>
+                        <input type="text" placeholder="Логин" required>
+                        <input type="password" placeholder="Пароль" required>
+                        <input type="name" placeholder="Имя" required>
+                        <input type="text" placeholder="Фамилия" required>
+                        <input type="email" placeholder="Почта" required>
+                        <a href="SingIn.html">Аккаунт имеется, Войти?</a>
+                        <button class="vhod-btn">Зарегистрироваться</button>
+                    </form>
+                </div>
             </div>
-        </div>
-    </section>
+        </section>
+    </div>
+    <script>
+        window.addEventListener('DOMContentLoaded', function () {
+            var video = document.getElementById('welcome-video');
+            var registrationForm = document.getElementById('registration-form');
+
+            document.addEventListener('keydown', function (event) {
+                if (event.key === 'Enter') {
+                    showRegistrationForm();
+                }
+            });
+
+            video.addEventListener('ended', function () {
+                showRegistrationForm();
+            });
+
+            function showRegistrationForm() {
+                video.style.display = 'none';
+                registrationForm.style.opacity = '1';
+                registrationForm.style.pointerEvents = 'auto';
+            }
+        });
+    </script>
 </body>
 
 </html>
